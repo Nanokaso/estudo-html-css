@@ -1,0 +1,417 @@
+
+.notebook
+{
+	/*background: #ccc;	*/
+	min-height: 100%;
+	height: 100%;
+	min-width: 100%;	
+	width: 100%;	
+	font-family: 'Open Sans', sans-serif;
+}
+
+.tampa
+{
+	position: relative;  
+	width: 100%;	
+	height: 4%;		
+	border-top-right-radius:  45%;
+	border-top-left-radius:  45%;
+	border-bottom-right-radius:  5px;
+	border-bottom-left-radius:  5px;
+	background: linear-gradient(to left, #ffceba,#ed8b77);			
+	/*box-shadow: inset  0px 6px 10px 1px #00000047;*/
+}
+
+.tampa .brilho
+{	
+	height: 0.1%;	
+	width: 99%;			
+	margin-left: 0.5%;
+	background: #ffffffba;
+	border-radius: 45%;
+	box-shadow: 0px -6px 10px 2px white;	
+	position: absolute;
+  	bottom: 0;
+  	left: 0;
+}
+.tampa .screen
+{
+	height: 3%;	
+	width: 99%;			
+	margin-left: 0.5%;
+	background: #282828;	
+	position: absolute;
+  	bottom: 0;
+  	left: 0;
+}
+.conector
+{
+	width: 40%;	
+	margin-left: 30%;
+	height: 2%;	
+	background: #5d5d5d;	
+	border-radius: 5px;
+	box-shadow: inset  0px -6px 10px 1px #00000047;
+}
+
+.teclado
+{
+	position: relative;	
+	width: 100%;	
+	height: 94%;				
+	background: linear-gradient(to left, #ffceba,#ed8b77);		
+	border-radius: 10px;	
+	box-shadow: inset  0px -6px 10px 1px #00000047;
+	display: flex;
+	align-items: center;
+  	justify-content: space-between;
+  	flex-direction: column;
+}
+
+.tecladopacote
+{	
+	width: 98%;	
+	height: 98%;
+	display: flex;
+	align-items: center;  	
+  	flex-direction: column;
+	/*margin-left: 1%;*/
+}
+
+
+.teclado .som
+{		
+	display: grid;	
+	padding: 1% 0%;
+	height: 6%;	
+	width: 100%;
+	display: flex;
+	align-items: center;
+  	justify-content: space-between;
+
+}
+.som div
+{
+	height: 90%;	
+	border: 1px #73645b solid;
+	border-radius: 5px; 		
+	padding: 3px;
+	width: 25%;
+	background:
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(black 15%, transparent 16%) 4px 4px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 4px 5px;
+		background-color:#575757;
+		background-size:8px 8px;
+	box-shadow: inset  0px -6px 10px 5px #00000047;
+}
+
+.letras
+{
+	background-color: white;
+	height:  60%;		
+	/*margin-top: 2%;*/
+	border-radius: 7px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	box-shadow: inset 0px -2px 20px 1px #00000047;
+}
+
+.letras>.faixa
+{
+	/*background-color: white;*/
+	height: 15%;		
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.letras>.faixa>div
+{
+	height: 100%;	
+	background: #ededed;
+	border-radius: 7px;	
+	/*width:6.5%;	*/
+	box-shadow: inset 0px -6px 10px 1px #00000047;	
+	margin:1px 2px;
+	padding: 2px 0px;		
+	
+	flex: 1 auto;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+
+  	flex-grow: 1;
+    flex-basis: 0;
+  	
+  	font-weight: bold;
+	
+	/*display: inline-block;*/
+}
+
+.letras>.faixa>div>:first-child
+{
+	font-size: calc(0.7vw + 0.5vh);	
+}
+
+.letras>.faixa>div>:last-child
+{
+	font-size: calc(1vw + 0.8vh);	
+}
+.fg0
+{
+	flex-grow: 0 auto!important; 
+}
+.fg1
+{
+	flex-grow: 1!important; 
+}
+.fg2
+{
+	flex-grow: 2!important; 
+}
+.fg25
+{
+	flex-grow: 2.5!important; 
+}
+.fg3
+{
+	flex-grow: 3!important; 
+}
+
+.fg4
+{
+	flex-grow: 4!important; 
+}
+
+.fg5
+{
+	flex-grow: 5!important; 
+}
+.bxs
+{
+	box-shadow: inset 0px -6px 10px 1px #00000047;
+}
+.letras>.faixa>div.setas
+{	
+	flex-direction: row;
+	background: transparent!important;	
+	box-shadow: none!important;	
+	
+  	font-weight: bold!important;
+  	height: 100%!important;
+
+  	margin: 0px!important;
+    padding: 0px!important;
+}
+.letras>.faixa>div.setas>div
+{
+	height: 100%!important;
+	display: flex!important;
+	flex-grow: 1!important;
+	justify-content: center!important;
+  	align-items: center;
+	flex-basis: 0!important;
+	background: #ededed;
+	border-radius: 7px;			
+}
+.letras>.faixa>div.setas>div.setasvertical
+{	
+	width: 100%!important;;
+	height: 100%!important;
+	display: flex!important;	
+	flex-direction: column!important;
+	justify-content: center!important;
+  	align-items: center;	
+  	flex-grow: 1!important; 
+  	margin:1px 2px;
+  	background: transparent!important;
+}
+.letras>.faixa>div.setas>div.setasvertical>div
+{	
+	background: #ededed;
+	width: 100%!important;
+	justify-content: space-between;!important;
+	flex-grow: 1!important; 
+	margin:1px 2px;
+	border-radius: 7px;	
+}
+
+.letras>.faixa.faixa1
+{
+	height: 10%!important; 		
+}
+.letras>.faixa.faixa1 div
+{	
+	font-size: calc(0.7vw + 0.5vh)!important;	
+}
+.letras>.faixa.faixa1 div.on
+{	
+	border-radius: 45px;
+	width: 10%;
+	background: #adadad;
+}
+
+
+.mouse
+{
+	border:solid 1px #adadad;
+	background: linear-gradient(to left, #ffceba,#ed8b77);	
+	box-shadow: inset 0px -2px 5px 1px #00000047;
+	margin-top: 1%;
+	height: 31%;	
+	width: 35%;
+	/*margin-top: 2%;*/
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+  	justify-content: space-around;	  	
+  	flex-direction: column;
+}
+
+.mouse .tatil
+{
+	border:solid 1px #adadad;
+	border-radius: 7px;
+
+	margin-top: 2%;	
+	height: 60%;	
+	width: 94%;	
+	display: flex;
+	align-items: center;
+  	justify-content: center;	
+}
+
+.mouse .botoes
+{	
+	border-radius: 7px;	
+	height: 20%;	
+	width: 94%;	
+	display: flex;
+	align-items: center;
+  	justify-content: center;	
+}
+
+.mouse .botoes>div
+{	
+	border:solid 1px #adadad;
+	
+	border-radius: 7px;
+	margin-bottom: 2%;
+	flex-grow: 1 auto;
+	height: 100%;	
+	width: 100%;	
+	display: flex;
+	align-items: center;
+  	justify-content: center;	
+}
+
+.mouse .botoes>div.separador
+{	
+	border: none!important;
+	border-radius: 7px;
+	margin-bottom: 2%;	
+	height: 100%;	
+	width: 3%;	
+	display: flex;
+	align-items: center;
+  	justify-content: center;	
+}
+
+
+
+
+
+/*.tampa
+{
+	min-height: 5px;
+	background: red;
+}
+
+.conector
+{
+	min-height: 10px;
+	background: #575757;
+}
+
+
+.pacote
+{	
+	height: 0;	
+	position: relative;
+	width: 100%;	
+
+  	padding-bottom: 56%;
+}
+
+.pacote .conteudo
+{	
+	width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.pacote .conteudo .caixa
+{
+	background-color: #F5D2BA; 		
+	border-radius: 15px; 
+	padding: 20px;
+	height: 100%;
+}
+
+.teclado
+{
+	position: relative;	
+ 	width: 100%; 
+	height: 1em;
+  	display: flex;
+  	align-items: center;
+  	justify-content: flex-start;
+  	flex-direction:  column ;	
+}
+.teclado .som
+{	
+	display: grid;
+	margin: 2%;	
+	height: 5%;	
+	width: 100%;
+	display: flex;
+	align-items: center;
+  	justify-content: space-between;
+
+}
+.som div
+{
+	height: 20%;	
+	border: 1px #73645b solid;
+	border-radius: 5px; 		
+	padding: 3px;
+	width: 35%;
+	background:
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(black 15%, transparent 16%) 4px 4px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 4px 5px;
+		background-color:#575757;
+		background-size:8px 8px;
+}
+.teclado .letras
+{
+	width: 100%;
+	height: 20px;
+	display: block;  
+	position: relative;		
+	margin-top: 1%; 
+	background: red;
+}
+*/
